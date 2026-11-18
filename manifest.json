@@ -1,0 +1,17 @@
+{
+  "name": "CleanPress - AI Noise Remover & Voice Enhancer",
+  "short_name": "CleanPress",
+  "description": "Remove background noise, hum and echo from podcasts, videos, lectures and voice recordings with AI on your own computer. Loudness for podcast, YouTube and audiobooks. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e7490",
+  "theme_color": "#0e7490",
+  "categories": ["music", "productivity", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [{ "action": "./", "accept": { "audio/*": [".mp3", ".m4a", ".wav", ".ogg", ".flac", ".aac", ".opus"], "video/*": [".mp4", ".mov", ".webm"] } }]
+}
