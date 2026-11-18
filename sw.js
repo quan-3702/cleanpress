@@ -1,4 +1,4 @@
-const CACHE = 'cleanpress-v1';
+const CACHE = 'cleanpress-v2';
 const ASSETS = ['./', 'index.html', 'help.html', 'privacy.html', 'style.css', 'clean-core.js', 'app.js', 'df.js', 'df-worker.js', 'mp3-worker.js', 'lame.min.js', 'LICENSE-DeepFilterNet.txt', 'manifest.json', 'icon-192.png', 'icon-512.png', 'icon-512-maskable.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
 // the AI model ("cleanpress-model") is kept: it is large and only downloaded once

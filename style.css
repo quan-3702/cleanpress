@@ -164,7 +164,8 @@ body.unlocked .strip.locked .nm::after { display: none; }
 .field.inline select { width: auto; margin: 0; }
 .tools { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
 .tool { display: flex; align-items: center; gap: 10px; font-size: 14px; }
-.tool > span { min-width: 210px; font-weight: 600; }
+.tool:not(.check) > span:first-child { min-width: 210px; font-weight: 600; }
+.tool.check { flex-wrap: wrap; }
 .tool input[type=range] { flex: 1; accent-color: var(--acc); }
 .tool b { min-width: 42px; text-align: right; font-variant-numeric: tabular-nums; }
 .tool.off { opacity: .55; }
